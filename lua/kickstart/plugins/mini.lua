@@ -10,6 +10,11 @@ return {
       --  - ci'  - [C]hange [I]nside [']quote
       require('mini.ai').setup { n_lines = 500 }
 
+      local ascii_header = require('ascii').art.text.neovim.bloody
+      require('mini.starter').setup {
+        header = table.concat(ascii_header, '\n'),
+        footer = '',
+      }
       -- Add/delete/replace surroundings (brackets, quotes, etc.)
       --
       -- - saiw) - [S]urround [A]dd [I]nner [W]ord [)]Paren
