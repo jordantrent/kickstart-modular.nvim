@@ -2,7 +2,10 @@
 -- See `:help vim.o`
 -- NOTE: You can change these options as you wish!
 --  For more options, you can see `:help option-list`
-
+vim.o.tabstop = 2 -- Number of visual spaces per TAB
+vim.o.softtabstop = 2 -- Number of spaces in tab when editing
+vim.o.shiftwidth = 2 -- Indentation amount for < and > commands
+vim.o.expandtab = true -- Use spaces instead of tabs
 -- Make line numbers default
 vim.o.number = true
 -- You can also add relative line numbers, to help with jumping.
@@ -70,5 +73,3 @@ vim.o.scrolloff = 10
 -- instead raise a dialog asking if you wish to save the current file(s)
 -- See `:help 'confirm'`
 vim.o.confirm = true
-
--- vim: ts=2 sts=2 sw=2 et
