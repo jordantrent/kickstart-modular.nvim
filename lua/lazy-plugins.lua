@@ -29,6 +29,8 @@ require('lazy').setup({
   require 'kickstart.plugins.ascii',
 
   require 'kickstart.plugins.lazygit',
+
+  require 'kickstart.plugins.fterm',
 }, {
   ui = {
     icons = vim.g.have_nerd_font and {} or {
